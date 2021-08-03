@@ -84,7 +84,7 @@ a{
 	padding: 114px 0 246px 0;
 	min-height: 750px;
 }
-.welcome__content h1{
+.welcome__content h2{
 	max-width: 598px;
 	letter-spacing: 5px;
 	text-transform: uppercase;
@@ -311,10 +311,7 @@ input[type="radio"]:not(:checked) + label{
 }
 input[type="radio"]:checked, 
 input[type="radio"]:not(:checked) 
-{
-    position: absolute;
-    left: -9999px;
-}
+
 
 .amount h3{
 	font-weight: 500;
@@ -438,6 +435,9 @@ input[type="radio"]:not(:checked)
 	border-radius: 50%;
 	width: 48px;
 	height: 48px;
+}
+.nav__media a:hover{
+	border: 1px solid #9D8665;
 }
 .nav__media li{
 	padding-right: 22px;
