@@ -2,6 +2,7 @@ const deg = 6;
 const hr = document.querySelector('#hr');
 const sec = document.querySelector('#sec');
 
+// Moscow UTC +3
 setInterval(() => {
 	let date = new Date();
 	let hh = date.getHours() * 30;
@@ -18,4 +19,20 @@ setInterval(() => {
 
 	const clock = hours + ":" + minutes + ":" + seconds;
 	document.querySelector(".electronic__clock").innerHTML = clock;
+
+	const days = date.getDay();
+	const dayArr = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+	const dayToday = dayArr[days];
+	document.querySelector(".day").innerHTML = dayToday;
+
+	const month = date.getMonth();
+	const monthArr = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
+	const monthToday = monthArr[month];
+	document.querySelector(".month").innerHTML = monthToday;
+
+	const dateMonth = date.getDate();
+	document.querySelector(".date__month").innerHTML = dateMonth;
+
+	const year = date.getFullYear();
+	document.querySelector(".year").innerHTML = year;
 })
