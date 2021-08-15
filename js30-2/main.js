@@ -1,8 +1,7 @@
+// Clock
 const deg = 6;
 const hr = document.querySelector('#hr');
 const sec = document.querySelector('#sec');
-
-// Moscow UTC +3
 setInterval(() => {
 	let date = new Date();
 	let hh = date.getHours() * 30;
@@ -35,4 +34,12 @@ setInterval(() => {
 
 	const year = date.getFullYear();
 	document.querySelector(".year").innerHTML = year;
+})
+
+// Themes
+document.querySelector('.radio__container').addEventListener('change', (event) => {
+	if (event.target.nodeName === 'INPUT') {
+		document.querySelector('.clock__container').classList.remove('dark', 'light');
+		document.querySelector('.clock__container').classList.add(event.target.value);
+	}
 })

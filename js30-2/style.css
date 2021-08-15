@@ -3,21 +3,27 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+.clock__container.light {
+	--color-bg: #fff;
+	--color-text:#000;
+	--color-hand: #000;
+}
+.clock__container.dark {
+	--color-bg: #091921;
+	--color-text: #fff;
+	--color-hand: #fff;
+}
 
-body{
+
+.clock__container{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background: #091921;
+	background: var(--color-bg);
+	transition: all 0.5s;
 	font-family: 'Heebo', sans-serif;
-}
-
-.title{
-	color: white;
-	font-size: 6vh;
-	font-weight: 300;
-	text-align: center;
+	color: var(--color-text);
 }
 
 .analog__clock {
@@ -37,7 +43,7 @@ body{
 	position: absolute;
 	width: 15px;
 	height: 15px;
-	background: #fff;
+	background: var(--color-hand);
 	border-radius: 50%;
 	z-index: 999;
 }
@@ -82,7 +88,7 @@ body{
 	position: absolute;
 	width: 4px;
 	height: 90px;
-	background-color: #fff;
+	background-color: var(--color-hand);
 	z-index: 11;
 	border-radius: 6px 6px 0 0;
 }
@@ -91,13 +97,12 @@ body{
 	position: absolute;
 	width: 2px;
 	height: 150px;
-	background-color: #fff;
+	background-color: var(--color-hand);
 	z-index: 12;
 	border-radius: 6px 6px 0 0;
 }
 
 .electronic__clock {
-	color: white;
 	font-weight: 400;
 	font-size: 7vh;
 	text-align: center;
@@ -110,7 +115,6 @@ body{
 }
 .day, .month, .year{
 	font-size: 2vh;
-	color: white;
 	font-weight: 300;
 	text-align: center;
 }
@@ -120,4 +124,25 @@ body{
 }
 .year {
 	opacity: 50%;
+}
+
+.radio__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form-item input[type=radio] {
+	display: none;
+}
+.form-item label {
+	padding: 5px 10px;
+	border-radius: 25px;
+}
+.dark__item {
+	background: #000;
+	color: #fff;
+}
+.light__item {
+	background: #ffc600;
+	color: #000;
 }

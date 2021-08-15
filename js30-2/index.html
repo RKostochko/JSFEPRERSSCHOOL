@@ -8,27 +8,41 @@
 	<title>JS + CSS clock</title>
 </head>
 <body>
-	<div class="clock">
-	<h1 class="title">Moscow</h1>
-	<div class="analog__clock">
-		<div class="hour">
-			<div class="hr" id="hr"></div>
-		</div>
-		<div class="minute">
-			<div class="min" id="min"></div>
-		</div>
-		<div class="second">
-			<div class="sec" id="sec"></div>
-		</div>
+	<div class="clock__container dark">
+		<div class="clock">
+			<form class="form">
+				<div class="radio__container">
+					<div class="form-item">
+						<input type="radio" name="theme" id="radio1" value="dark" checked>
+						<label class="dark__item" for="radio1">Dark</label>
+					</div>
+					<div class="form-item">
+						<input type="radio" name="theme" id="radio2" value="light">
+						<label class ="light__item" for="radio2">Light</label>
+					</div>
+				</div>
+			</form>
+			<div class="analog__clock">
+				<div class="hour">
+					<div class="hr" id="hr"></div>
+				</div>
+				<div class="minute">
+					<div class="min" id="min"></div>
+				</div>
+				<div class="second">
+					<div class="sec" id="sec"></div>
+				</div>
+			</div>
+			<div class="electronic__clock"></div>
+			<div class="date__clock">
+				<div class="day"></div>
+				<div class="date__month"></div>
+				<div class="month"></div>
+			</div>
+			<div class="year"></div>
+			</div>
 	</div>
-	<div class="electronic__clock"></div>
-	<div class="date__clock">
-		<div class="day"></div>
-		<div class="date__month"></div>
-		<div class="month"></div>
-	</div>
-	<div class="year"></div>
-	</div>
+
 	<script src="main.js"></script>
 </body>
 </html>
