@@ -1,0 +1,65 @@
+.section-options {
+	display: flex;
+	align-items: center;
+	margin: 126px 0 25px 100px;
+}
+
+.options {
+	width: 300px;
+	margin: 0 238px 0px 0px;
+}
+.option {
+	padding-bottom: 30px;
+}
+.option-title {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.option-icon {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+.slider {
+	width: 262px;
+	height: 1px;
+	background: black;
+}
+
+.section-window img {
+	width: 800px;
+	height: 500px;
+}
+
+.section-buttons {
+	margin: 0 0 73px 100px;
+}
+.btn-first {
+	display: flex;
+	margin: 0 0 14px 0;
+}
+.btn-second {
+	display: flex;
+}
+.btn-next {
+	margin: 0 0 0 10px;
+}
+#next {
+	background-color: #ff8000;
+	color: #000;
+}
+.btn {
+	width: 130px;
+	background-color: #000;
+	border-radius: 40px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	padding: 10px 5px;
+	font-size: 18px;
+}
+.load {
+	margin: 0 0 10px 10px;
+	border-radius: 0;
+}
