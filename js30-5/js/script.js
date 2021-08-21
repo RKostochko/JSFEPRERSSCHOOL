@@ -17,6 +17,29 @@ function handleUpdate() {
 inputs.forEach(input => input.addEventListener('change', handleUpdate));
 inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
 
+// Add Filters & Effects
+document.addEventListener('click', e => {
+	if (e.target.classList.contains('preset-btn')) {
+		if (e.target.classList.contains('vintage-add')) {
+			Caman('#canvas', img, function () {
+				this.vintage().render();
+			});
+		} else if (e.target.classList.contains('lomo-add')) {
+			Caman('#canvas', img, function () {
+				this.lomo().render();
+			});
+		} else if (e.target.classList.contains('sincity-add')) {
+			Caman('canvas', img, function () {
+				this.sinCity().render();
+			});
+		} else if (e.target.classList.contains('clarity-add')) {
+			Caman('#canvas', img, function () {
+				this.clarity().render();
+			});
+		}
+	}
+})
+
 // Upload File
 uploadFile.addEventListener("change", () => {
 	// Get File
