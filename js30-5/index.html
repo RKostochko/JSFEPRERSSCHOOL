@@ -83,30 +83,33 @@
 					</div>
 				</div>
 				<div class="section-window">
-					<button class="btn load">Load picture</button>
-					<div class="picture"><img src="img/dubai.jfif" alt="dubai"></div>
-
+					<div class="input-wrapper">
+						<input name="img" type="file" class="input-file input" id="upload-file" multiple>
+						<label for="upload-file" class="input-file-button">
+							<span class="input-file-button-text">Choose image</span>
+						</label>
+					</div>
+					<canvas id="canvas"></canvas>
+					<div class="presets">
+						<button class="preset-btn vintage-add btn">Vintage</button>
+						<button class="preset-btn lomo-add btn">Lomo</button>
+						<button class="preset-btn sincity-add btn">Sin City</button>
+						<button class="preset-btn calrity-add btn">Clarity</button>
+					</div>
 				</div>
 			</div>
 			<div class="section-buttons">
 				<div class="buttons">
 					<div class="btn-first">
 						<div class="btn-reset">
-							<button class="btn reset">Reset</button>
+							<button class="btn" id="reset">Reset</button>
 						</div>
-						<div class="btn-next">
-							<button class="btn" id="next">Next Picture</button>
-						</div>
-					</div>
-					<div class="btn-second">
 						<div class="btn-save">
-							<button class="btn save">Save Picture</button>
+							<button class="btn" id="save">Save picture</button>
 						</div>
 					</div>
 				</div>
 			</div>
-
-
 
 		</main>
 
@@ -114,6 +117,9 @@
 
 		</footer>
 	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"
+		integrity="sha512-JjFeUD2H//RHt+DjVf1BTuy1X5ZPtMl0svQ3RopX641DWoSilJ89LsFGq4Sw/6BSBfULqUW/CfnVopV5CfvRXA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="js/script.js"></script>
 </body>
 

@@ -8,7 +8,7 @@
 	--hue-rotate: 0deg;
 }
 
-.picture {
+.canvas {
 	filter: blur(var(--blur)) brightness(var(--brightness)) opacity(var(--opacity)) sepia(var(--sepia))
 		invert(var(--invert)) contrast(var(--contrast)) hue-rotate(var(--hue-rotate));
 }

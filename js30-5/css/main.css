@@ -27,7 +27,8 @@
 	background: black;
 }
 
-.section-window img {
+#canvas {
+	background: #ececec;
 	width: 800px;
 	height: 500px;
 }
@@ -42,12 +43,11 @@
 .btn-second {
 	display: flex;
 }
-.btn-next {
+.btn-save {
 	margin: 0 0 0 10px;
 }
-#next {
-	background-color: #ff8000;
-	color: #000;
+#save {
+	background-color: #1bbc9b;
 }
 .btn {
 	width: 130px;
@@ -59,7 +59,35 @@
 	padding: 10px 5px;
 	font-size: 18px;
 }
-.load {
-	margin: 0 0 10px 10px;
-	border-radius: 0;
+.input-wrapper {
+	width: 100%;
+	position: relative;
+	margin: 15px 0;
+	text-align: center;
+}
+.input-file {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+}
+.input-file-button-text {
+	line-height: 1;
+	margin-top: 1px;
+}
+.input-file-button {
+	width: 100%;
+	max-width: 290px;
+	height: 60px;
+	background: #1bbc9b;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 3px;
+	padding: 3px 7px;
+}
+.preset-btn {
+	margin: 10px 89px 0 0;
+	background: #c0c0c0;
+}
+.calrity-add {
+	margin: 10px 0 0 0;
 }
