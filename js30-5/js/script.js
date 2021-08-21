@@ -29,7 +29,7 @@ document.addEventListener('click', e => {
 				this.lomo().render();
 			});
 		} else if (e.target.classList.contains('sincity-add')) {
-			Caman('canvas', img, function () {
+			Caman('#canvas', img, function () {
 				this.sinCity().render();
 			});
 		} else if (e.target.classList.contains('clarity-add')) {
@@ -38,6 +38,13 @@ document.addEventListener('click', e => {
 			});
 		}
 	}
+})
+
+// Reset Filters
+resetBtn.addEventListener("click", e => {
+	Caman('#canvas', img, function () {
+		this.revert();
+	});
 })
 
 // Upload File
