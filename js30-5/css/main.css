@@ -1,0 +1,93 @@
+.section-options {
+	display: flex;
+	align-items: center;
+	margin: 126px 0 25px 100px;
+}
+
+.options {
+	width: 300px;
+	margin: 0 238px 0px 0px;
+}
+.option {
+	padding-bottom: 30px;
+}
+.option-title {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.option-icon {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+.slider {
+	width: 262px;
+	height: 1px;
+	background: black;
+}
+
+#canvas {
+	background: #ececec;
+	width: 800px;
+	height: 500px;
+}
+
+.section-buttons {
+	margin: 0 0 73px 100px;
+}
+.btn-first {
+	display: flex;
+	margin: 0 0 14px 0;
+}
+.btn-second {
+	display: flex;
+}
+.btn-save {
+	margin: 0 0 0 10px;
+}
+#save {
+	background-color: #1bbc9b;
+}
+.btn {
+	width: 130px;
+	background-color: #000;
+	border-radius: 40px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	padding: 10px 5px;
+	font-size: 18px;
+}
+.input-wrapper {
+	width: 100%;
+	position: relative;
+	margin: 15px 0;
+	text-align: center;
+}
+.input-file {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+}
+.input-file-button-text {
+	line-height: 1;
+	margin-top: 1px;
+}
+.input-file-button {
+	width: 100%;
+	max-width: 290px;
+	height: 60px;
+	background: #1bbc9b;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 3px;
+	padding: 3px 7px;
+}
+.preset-btn {
+	margin: 10px 89px 0 0;
+	background: #c0c0c0;
+}
+.clarity-add {
+	margin: 10px 0 0 0;
+}
