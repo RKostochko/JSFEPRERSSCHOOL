@@ -1,0 +1,9 @@
+.header {
+	height: 100px;
+	text-align: center;
+}
+h1 {
+	font-size: 24px;
+	padding: 44px 0px 28px 0px;
+	font-family: "Montserrat", sans-serif;
+}
